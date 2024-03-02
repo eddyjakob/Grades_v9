@@ -13,7 +13,7 @@ struct ContentView: View {
             ScrollView{
                 Divider()
                 Fachkachel(color: .blue)
-                Fachkachel(color: .red)
+                Fachkachel(color: .yellow)
                 
             }.navigationBarItems(trailing: Button(action: {
                 
