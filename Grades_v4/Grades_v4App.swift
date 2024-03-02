@@ -11,7 +11,7 @@ import SwiftUI
 struct Grades_v4App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Wrapper()
         }
     }
 }

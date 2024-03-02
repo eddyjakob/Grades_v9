@@ -5,10 +5,23 @@
 //  Created by Etienne Hüttl on 02.03.24.
 //
 
-class testspeicher{
+import Foundation
+
+class testspeicher: Hashable{
+    static func == (lhs: testspeicher, rhs: testspeicher) -> Bool {
+        return lhs.datum_geschrieben == rhs.datum_geschrieben && lhs.note == rhs.note && lhs.testart == rhs.testart
+    }
+    
+    
+    
     var datum_geschrieben: Int
     var note: Double
     var testart: testarten
+    let id = UUID()
+    
+    func hash(into hasher: inout Hasher) {
+            hasher.combine(id)
+        }
     
     init(datum_geschrieben: Int, note: Double, testart: testarten) {
         self.datum_geschrieben = datum_geschrieben
@@ -19,8 +32,16 @@ class testspeicher{
     
 }
  
+class storageclass: ObservableObject{
+    @Published var activeview: viewcase = .schuljahr
+}
+
  
-enum testarten{
+enum testarten: Hashable{
     case hü, klassenarbeit, voctest, epo
     
+}
+
+enum viewcase{
+    case schuljahr, fach
 }

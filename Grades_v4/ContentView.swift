@@ -8,12 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    var fächer: [Fachkachel] = [Fachkachel(color: .blue, fach: "Mathe"), Fachkachel(color: .red, fach: "Englisch")]
+    @ObservedObject var storage: storageclass
     var body: some View {
         NavigationView{
             ScrollView{
                 Divider()
-                Fachkachel(color: .blue)
-                Fachkachel(color: .yellow)
+                ForEach(fächer, id: \.self) { fach in
+                    Button(action: {
+                        storage.activeview = .fach
+                    }, label: {
+                        fach
+                    })
+                    
+                
+            }
                 
             }.navigationBarItems(trailing: Button(action: {
                 
@@ -31,9 +41,13 @@ struct ContentView: View {
         }
     }
 }
-
+/*
 struct ContentView_Previews: PreviewProvider {
+    
+    @StateObject var storage: storageclass = storageclass()
+    
     static var previews: some View {
-        ContentView()
+        ContentView(storage: storage)
     }
 }
+*/

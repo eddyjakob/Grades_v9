@@ -7,12 +7,14 @@
 
 import SwiftUI
 
-struct Fachkachel: View {
+struct Fachkachel: View, Hashable{
     
     var color: Color
     var accentcolor: Color = .white
-    var fach: String = "Mathe"
-     
+    var fach: String
+    var daten: testspeicher?
+    
+    
     var body: some View {
         ZStack{
             RoundedRectangle(cornerRadius: 29.09)
@@ -51,6 +53,6 @@ struct Fachkachel: View {
 
 struct Fachkachel_Previews: PreviewProvider {
     static var previews: some View {
-        Fachkachel(color: .blue)
+        Fachkachel(color: .blue , fach: "Mathe")
     }
 }

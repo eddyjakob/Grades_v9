@@ -12,6 +12,8 @@
 		5C2020172B90CF07001E72B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C2020162B90CF07001E72B6 /* Assets.xcassets */; };
 		5C20201A2B90CF07001E72B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C2020192B90CF07001E72B6 /* Preview Assets.xcassets */; };
 		5CC396CD2B93517C00A1CBA4 /* Fachkachel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC396CC2B93517C00A1CBA4 /* Fachkachel.swift */; };
+		5CC396D32B960AC100A1CBA4 /* Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC396D22B960AC100A1CBA4 /* Wrapper.swift */; };
+		5CC396D52B960B6A00A1CBA4 /* FachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC396D42B960B6A00A1CBA4 /* FachView.swift */; };
 		643C0C212B935F7E00FCAE93 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C0C202B935F7E00FCAE93 /* File.swift */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +24,8 @@
 		5C2020162B90CF07001E72B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C2020192B90CF07001E72B6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5CC396CC2B93517C00A1CBA4 /* Fachkachel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fachkachel.swift; sourceTree = "<group>"; };
+		5CC396D22B960AC100A1CBA4 /* Wrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wrapper.swift; sourceTree = "<group>"; };
+		5CC396D42B960B6A00A1CBA4 /* FachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FachView.swift; sourceTree = "<group>"; };
 		643C0C202B935F7E00FCAE93 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +65,8 @@
 				5C2020182B90CF07001E72B6 /* Preview Content */,
 				5CC396CC2B93517C00A1CBA4 /* Fachkachel.swift */,
 				643C0C202B935F7E00FCAE93 /* File.swift */,
+				5CC396D22B960AC100A1CBA4 /* Wrapper.swift */,
+				5CC396D42B960B6A00A1CBA4 /* FachView.swift */,
 			);
 			path = Grades_v4;
 			sourceTree = "<group>";
@@ -144,8 +150,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CC396CD2B93517C00A1CBA4 /* Fachkachel.swift in Sources */,
+				5CC396D32B960AC100A1CBA4 /* Wrapper.swift in Sources */,
 				643C0C212B935F7E00FCAE93 /* File.swift in Sources */,
 				5C2020152B90CF06001E72B6 /* ContentView.swift in Sources */,
+				5CC396D52B960B6A00A1CBA4 /* FachView.swift in Sources */,
 				5C2020132B90CF06001E72B6 /* Grades_v4App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
