@@ -10,28 +10,21 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView{
-            List(){
-                RoundedRectangle(cornerRadius: 29.09)
-                    .frame(width: 320, height: 130)
-                    .foregroundStyle(Color(cgColor: CGColor(red: 0.170677, green: 0.350403, blue: 0.225609, alpha: 1)))
-                    .opacity(0.77)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                
-                RoundedRectangle(cornerRadius: 29.09)
-                    .frame(width: 320, height: 130)
-                    .foregroundStyle(Color(.black))
-                    .opacity(0.77)
-                    .frame(maxWidth: .infinity, alignment: .leading)
+            ScrollView{
+                Divider()
+                Fachkachel(color: .blue)
+                Fachkachel(color: .red)
                 
             }.navigationBarItems(trailing: Button(action: {
                 
             }){
                 Image(systemName: "plus.rectangle.on.folder.fill")
                     .resizable()
+                    .scaledToFit()
                     .padding(4)
-                    .frame(width: 50, height: 40)
+                    .frame(width: 45, height: 35)
 
-                    .foregroundColor(.black)
+                    .foregroundColor(.blue)
             } )
             .navigationTitle("Grades").frame(maxWidth: .infinity, alignment: .leading)
             
