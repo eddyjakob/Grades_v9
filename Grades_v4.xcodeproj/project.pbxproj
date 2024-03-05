@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C0B04C72B98EE20007D887C /* Notenkasten.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0B04C62B98EE20007D887C /* Notenkasten.swift */; };
 		5C2020132B90CF06001E72B6 /* Grades_v4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2020122B90CF06001E72B6 /* Grades_v4App.swift */; };
 		5C2020152B90CF06001E72B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2020142B90CF06001E72B6 /* ContentView.swift */; };
 		5C2020172B90CF07001E72B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C2020162B90CF07001E72B6 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C0B04C62B98EE20007D887C /* Notenkasten.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notenkasten.swift; sourceTree = "<group>"; };
 		5C20200F2B90CF06001E72B6 /* Grades_v4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grades_v4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C2020122B90CF06001E72B6 /* Grades_v4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grades_v4App.swift; sourceTree = "<group>"; };
 		5C2020142B90CF06001E72B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				643C0C202B935F7E00FCAE93 /* File.swift */,
 				5CC396D22B960AC100A1CBA4 /* Wrapper.swift */,
 				5CC396D42B960B6A00A1CBA4 /* FachView.swift */,
+				5C0B04C62B98EE20007D887C /* Notenkasten.swift */,
 			);
 			path = Grades_v4;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 				643C0C212B935F7E00FCAE93 /* File.swift in Sources */,
 				5C2020152B90CF06001E72B6 /* ContentView.swift in Sources */,
 				5CC396D52B960B6A00A1CBA4 /* FachView.swift in Sources */,
+				5C0B04C72B98EE20007D887C /* Notenkasten.swift in Sources */,
 				5C2020132B90CF06001E72B6 /* Grades_v4App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
