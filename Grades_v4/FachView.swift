@@ -9,13 +9,84 @@ import SwiftUI
 
 struct FachView: View {
     
+    var buttoncolor: Color = .red
     @ObservedObject var storage: storageclass
     
     var body: some View {
         NavigationView{
-            Text("xx")
-                .navigationBarItems(leading: Button(action: {
+            ScrollView{
+                
+                Divider()
+                HStack{
+                    Text("Klassenarbeiten").frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.leading, 20)
+                        .font(.title)
+                        .bold()
                     
+                label: do {
+                    HStack{
+                        Text("-,--")
+                            .font(.title2)
+                            .foregroundStyle(Color(cgColor: CGColor(red: 0.54902, green: 0.54902, blue: 0.54902, alpha: 1)))
+                        
+                        Text("Ø").font(.title2)
+                            .bold()
+                    }.padding(.trailing, 20)
+                }
+                    
+                }
+                Group{
+                    Notenkasten(note: "1,0", testtyp: "1.Klassenarbeit")
+                    Notenkasten(note: "1,25", testtyp: "2.Klassenarbeit")
+                    Notenkasten(note: "1,75", testtyp: "3.Klassenarbeit")
+                    Notenkasten(note: "1,0", testtyp: "4.Klassenarbeit")
+                }
+                Divider()
+                HStack{
+                    Text("HÜ´S").frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.leading, 20)
+                        .font(.title)
+                        .bold()
+                    
+                label: do {
+                    HStack{
+                        Text("-,--")
+                            .font(.title2)
+                            .foregroundStyle(Color(cgColor: CGColor(red: 0.54902, green: 0.54902, blue: 0.54902, alpha: 1)))
+                        
+                        Text("Ø").font(.title2)
+                            .bold()
+                    }.padding(.trailing, 20)
+                }
+                    
+                }
+                Group{
+                    Notenkasten(note: "4,0", testtyp: "1.HÜ")
+                    Notenkasten(note: "3,25", testtyp: "2.HÜ")
+                    Notenkasten(note: "2,75", testtyp: "3.HÜ")
+                    Notenkasten(note: "1,0", testtyp: "4.HÜ")
+                }
+                Divider()
+                
+                Button("Löschen") {
+                    
+                }.bold().font(.title3).foregroundColor(buttoncolor).frame(maxWidth: .infinity, alignment: .center)
+                
+                    
+                
+                
+            }.navigationBarItems(trailing: Button(action: {
+                
+            }){
+                Image(systemName: "plus.circle.fill")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 30, height: 30)
+
+                    .foregroundColor(.blue)
+            } )
+            .navigationBarItems(leading: Button(action: {
+                
                 }){
                     Button(action: {
                         storage.activeview = .schuljahr
@@ -34,6 +105,8 @@ struct FachView: View {
                     
                     
                 } )
+            .navigationTitle("Mathe")
+            
         }
     }
 }
