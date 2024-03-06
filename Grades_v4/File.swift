@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 class testspeicher: Hashable{
     static func == (lhs: testspeicher, rhs: testspeicher) -> Bool {
@@ -31,9 +32,32 @@ class testspeicher: Hashable{
     
     
 }
- 
+
+class fachspeicher: Hashable{
+    static func == (lhs: fachspeicher, rhs: fachspeicher) -> Bool {
+        return lhs.tests == rhs.tests && lhs.color == rhs.color && lhs.name == rhs.name
+    }
+    
+    var tests: [testspeicher]
+    var color: Color
+    var name: String
+    let id = UUID()
+    
+    init(tests: [testspeicher], color: Color, name: String) {
+        self.tests = tests
+        self.color = color
+        self.name = name
+    }
+    
+    func hash(into hasher: inout Hasher) {
+            hasher.combine(id)
+        }
+}
+
+
 class storageclass: ObservableObject{
     @Published var activeview: viewcase = .schuljahr
+    @Published var fächer: [fachspeicher] = []
 }
 
  
@@ -55,5 +79,5 @@ func gettestartenString(testart: testarten) -> String{
 }
 
 enum viewcase{
-    case schuljahr, fach
+    case schuljahr, fach, addfach
 }

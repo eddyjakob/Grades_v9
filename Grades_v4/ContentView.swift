@@ -8,18 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    var fächer: [Fachkachel] = [Fachkachel(color: .blue, fach: "Mathe"), Fachkachel(color: .red, fach: "Englisch")]
     @ObservedObject var storage: storageclass
     var body: some View {
         NavigationView{
             ScrollView{
                 Divider()
-                ForEach(fächer, id: \.self) { fach in
+                ForEach(storage.fächer, id: \.self) { fach in
                     Button(action: {
                         storage.activeview = .fach
                     }, label: {
-                        fach
+                        Fachkachel(color: fach.color, fach: fach.name)
                     })
                     
                 
