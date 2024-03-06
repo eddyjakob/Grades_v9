@@ -41,6 +41,10 @@ struct Notenkasten: View {
     }
 }
 
-#Preview {
-    Notenkasten(note: "1,5", testtyp:"1.Klassenarbeit")
+
+struct Notenkasten_Previews: PreviewProvider {
+    static var previews: some View {
+        Notenkasten(note: "1,5", testtyp: "hü")
+    }
 }
+
