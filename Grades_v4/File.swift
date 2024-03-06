@@ -39,7 +39,19 @@ class storageclass: ObservableObject{
  
 enum testarten: Hashable{
     case hü, klassenarbeit, voctest, epo
-    
+}
+
+func gettestartenString(testart: testarten) -> String{
+    switch testart {
+    case .hü:
+        return "HÜ"
+    case .klassenarbeit:
+        return "Klassenarbeit"
+    case .voctest:
+        return "Vocabeltest"
+    case .epo:
+        return "Epochal"
+    }
 }
 
 enum viewcase{

@@ -11,7 +11,7 @@ import SwiftUI
 struct Notenkasten: View {
     
     var note: String
-    var testtyp: String
+    var testtyp: testarten
     var accentcolor: Color = .white
     var notencolor: Color = .red
     var body: some View {
@@ -23,7 +23,7 @@ struct Notenkasten: View {
                 .opacity(0.65)
             HStack{
                 
-                Text(testtyp)
+                Text(gettestartenString(testart:testtyp))
                     .foregroundColor(accentcolor)
                     .font(.title2)
                     .bold()
@@ -44,7 +44,7 @@ struct Notenkasten: View {
 
 struct Notenkasten_Previews: PreviewProvider {
     static var previews: some View {
-        Notenkasten(note: "1,5", testtyp: "hü")
+        Notenkasten(note: "1,5", testtyp: .hü)
     }
 }
 

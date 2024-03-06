@@ -36,10 +36,10 @@ struct FachView: View {
                     
                 }
                 Group{
-                    Notenkasten(note: "1,0", testtyp: "1.Klassenarbeit")
-                    Notenkasten(note: "1,25", testtyp: "2.Klassenarbeit")
-                    Notenkasten(note: "1,75", testtyp: "3.Klassenarbeit")
-                    Notenkasten(note: "1,0", testtyp: "4.Klassenarbeit")
+                    Notenkasten(note: "1,0", testtyp: .klassenarbeit)
+                    Notenkasten(note: "1,25", testtyp: .klassenarbeit)
+                    Notenkasten(note: "1,75", testtyp: .klassenarbeit)
+                    Notenkasten(note: "1,0", testtyp: .klassenarbeit)
                 }
                 Divider()
                 HStack{
@@ -61,10 +61,10 @@ struct FachView: View {
                     
                 }
                 Group{
-                    Notenkasten(note: "4,0", testtyp: "1.HÜ")
-                    Notenkasten(note: "3,25", testtyp: "2.HÜ")
-                    Notenkasten(note: "2,75", testtyp: "3.HÜ")
-                    Notenkasten(note: "1,0", testtyp: "4.HÜ")
+                    Notenkasten(note: "4,0", testtyp: .hü)
+                    Notenkasten(note: "3,25", testtyp: .hü)
+                    Notenkasten(note: "2,75", testtyp: .hü)
+                    Notenkasten(note: "1,0", testtyp: .hü)
                 }
                 Divider()
                 
